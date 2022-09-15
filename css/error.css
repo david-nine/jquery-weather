@@ -1,0 +1,16 @@
+.error {
+    position: fixed;
+    margin-top: 20px;
+    margin-left: 70%;
+    width: 25%;
+    height: 90px;
+    background-color: #d65151;
+    border-radius: 5%;
+    display: none;
+}
+
+.error > span {
+    display: flex;
+    text-align: center;
+    
+}

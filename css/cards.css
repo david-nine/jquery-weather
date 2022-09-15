@@ -1,0 +1,8 @@
+.card > ul > li {
+    font-size: 12px;
+}
+
+.card-img-top {
+    margin: auto;
+    width: 100px;
+}

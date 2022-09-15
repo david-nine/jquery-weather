@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="js/controller.js"></script>
+    <script src="js/weather-service.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/loading.css">
+    <link rel="stylesheet" href="/css/error.css">
+    <link rel="stylesheet" href="/css/cards.css">
+    <link rel="stylesheet" href="/css/form.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <div class="container mt-3">
+
+        <div class="row display-flex justify-content-center">
+            <div class="col-6 form">
+                <label for="cityName" class="me-4">Cidade</label>
+                <input class="form-control me-4" type="text" name="cityName" id="cityName">
+                <button class="btn btn-primary" onclick="onConfirm()">Enviar</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-5 display-flex justify-content-center" id="prevision-cards"></div>
+
+        <div class="lds-roller" style="margin: auto;">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+    <div class="error">
+        <span id="error-message"></span>
+    </div>
+</body>
+
+</html>

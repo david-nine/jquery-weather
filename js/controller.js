@@ -9,7 +9,7 @@ function onShowCard(prevision) {
     const day = prevision.day;
     const dayOfWeek = moment(prevision.date).lang("pt-br").format('dddd');
     var newCard = card.replace("imageUrl", day.condition.icon)
-        .replace("temperature", day.maxtemp_c)
+        .replace("temperature", day.avgtemp_c)
         .replace("chanceOfRain", day.daily_chance_of_rain)
         .replace("alert", day.condition.text).replace("dayOfWeek", dayOfWeek)
     $('#prevision-cards').append(newCard);
